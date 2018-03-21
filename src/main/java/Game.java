@@ -16,8 +16,8 @@ public class Game {
         int winCountPlayerA = 0, drawCount = 0;
         Type currentTypeA, currentTypeB;
         for (int i = 0; i < 100; i++) {
-            currentTypeA = playerA.getCurrentType();
-            currentTypeB = playerB.getCurrentType();
+            currentTypeA = playerA.getMoveType();
+            currentTypeB = playerB.getMoveType();
             if (currentTypeA.equals(currentTypeB)) {
                 drawCount++;
             } else if (currentTypeA.beats(currentTypeB)) {
